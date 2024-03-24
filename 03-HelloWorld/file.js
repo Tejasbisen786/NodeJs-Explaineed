@@ -3,24 +3,24 @@ const fs = require("fs");
 // sync async ->  blocking and unblocking request
 
 // ** Creating a File
-//Sync
-// fs.writeFileSync("./test.txt", "Tejas Bisen");
-//Async
-// fs.writeFile("./test1.txt", "Tejas Bisen Async File", (err) => {});
+//Sync -> Blocking Requests
+fs.writeFileSync("./test.txt", "Tejas Bisen");
+// Async -> Non Blocking Requests
+fs.writeFile("./test1.txt", "Tejas Bisen Async File", (err) => {});
 
 // **reading file
 // sync -> returning result
-// const rsult = fs.readFileSync("./contact.txt","utf-8")
+const rsult = fs.readFileSync("./contact.txt","utf-8")
 // console.log(rsult)
 
 // expecting and defining callback func
-// fs.readFile("./contact.txt", "utf-8", (err, result) => {
-//   if (err) {
-//     console.log("error", err);
-//   } else {
-//     console.log(result);
-//   }
-// });
+fs.readFile("./contact.txt", "utf-8", (err, result) => {
+  if (err) {
+    console.log("error", err);
+  } else {
+    console.log(result);
+  }
+});
 
 // ** Append File
 // new Date().getDate().toLocaleString()
