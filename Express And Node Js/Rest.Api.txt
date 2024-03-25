@@ -1,0 +1,39 @@
+Restful Api => Reprsental state transfer
+REST : Represental States  Rules  [ Best Practises ]
+Give best practises 
+
+ |-----------Res -------->|
+server -----------------client  [Mobile , Device]
+ |<--------Req-------------|      
+
+******************************************************
+-- Works On Server And Client Architecture 
+***Standards 
+ 1 -> Get Some Blogs Data - Fetch From Db -> 
+  -> Response In HTML FOrmat [ SSR - Server side rendering]
+ 2-> Get Some Data -> Fetch From Db ->
+    -> response in Json FOrmat [ Key: xxx , Value:yy Pairs]
+         -- Render Data in Screen As A Raw Format
+
+If Client -> always Send HTMl Response
+but Cross Platform -> Json Format Response
+
+**** Always Respect All Http Methods 
+  - GET, POST , PATCH , PUT , DELETE
+  Get/user
+  post/user
+  patch/user
+  delete/user
+
+  - Client - Browser HTML
+  - Respect HTTP METHODS
+ SSR [ Server Side Rendering ]- Fast [ directly Data access from db]
+ CSR [Client Side Rendering ] - > Slow
+  res.send()
+  res.json()
+  res.render()
+ 
+
+
+
+
