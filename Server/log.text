@@ -1,15 +1,6 @@
-1711348289930 /about : New Request Received 
-1711348295155 / : New Request Received 
-1711348344702 /contact : New Request Received 
-1711348398503 /contact?myName=Tejas : New Request Received 
-1711348403784 /contact?myName=Tejas : New Request Received 
-1711348404446 /contact?myName=Tejas : New Request Received 
-1711348434657 /about : New Request Received 
-1711348458408 / : New Request Received 
-1711348468847 /about : New Request Received 
-1711348470903 /about : New Request Received 
-1711348644989 /about : New Request Received 
-1711348744084 /about?myName=tejasbisen&id=1 : New Request Received 
-1711348806924 /about?myName=tejasbisen&id=1 : New Request Received 
-1711348929141 /about?myName=tejasbisen&id=1 : New Request Received 
-1711348959090 /about?myName=johndo&id=1 : New Request Received 
+1711350209997 :GET  /about?myName=johndo&id=1 : New Request Received 
+1711350225610 :GET  / : New Request Received 
+1711350240756 :GET  / : New Request Received 
+1711350256511 :GET  /contact : New Request Received 
+1711350407042: GET : /signup : New Request Received 
+1711350449872: GET : / : New Request Received 
