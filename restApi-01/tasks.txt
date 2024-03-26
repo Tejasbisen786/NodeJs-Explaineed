@@ -1,0 +1,16 @@
+REST API - JSON
+
+
+GET /USERS - List all users 
+GET / users/1 : Get the user id 1
+GET / users/2   Get the user id 1
+
+
+POST/user- Create A user
+
+Patch/user/1 - Edit the user with id 1 
+
+ DELETE /users/1 - Delete the user data With id 1 
+
+
+https://www.mockaroo.com/ - Genrating json data For Testing
