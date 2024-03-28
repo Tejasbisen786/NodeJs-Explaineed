@@ -6,12 +6,22 @@ const PORT = 8000;
 
 app.use(express.urlencoded({ extended: false }));
 
+app.use((req, res, next) => {
+  fs.appendFile(
+    "log.txt",
+    `${Date.now()} :  ${req.ip} :${req.method} : ${req.path} \n`,
+    (err, data) => {
+      next();
+    }
+  );
+});
+
 // routes
 
 app.get("/users", (req, res) => {
-  const html = `  <ul>${users
-    .map((user) => `<li> ${user.first_name}</li>`)
-    .join("")} </ul`;
+  const html = `  <ul>
+${users.map((user) => `<li> ${user.first_name}</li>`).join("")}
+     </ul`;
   res.send(html);
 });
 
