@@ -4,3 +4,17 @@
 1711616704408 : GET : /api/users/1005 
 1711616729050 : POST : /api/users 
 1711616805486 :  ::1 :GET : /api/users/1006 
+1711873370312 :  ::1 :GET : /api/users/1006 
+1711873381447 :  ::1 :GET : /api/users 
+1711873593584 :  ::1 :GET : /api/users 
+1711873639133 :  ::1 :GET : /api/users 
+1711873666433 :  ::1 :GET : /api/users 
+1711873783963 :  ::1 :GET : /api/users 
+1711874386044 :  ::1 :GET : /api/users 
+1711874652836 :  ::1 :POST : /api/users 
+1711874893223 :  ::1 :POST : /api/users 
+1711874902696 :  ::1 :POST : /api/users 
+1711874911940 :  ::1 :POST : /api/users 
+1711875125083 :  ::1 :GET : /api/users/10069 
+1711875128847 :  ::1 :GET : /api/users/1006 
+1711875132965 :  ::1 :GET : /api/users/1008 

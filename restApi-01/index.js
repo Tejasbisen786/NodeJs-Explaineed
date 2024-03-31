@@ -26,14 +26,27 @@ ${users.map((user) => `<li> ${user.first_name}</li>`).join("")}
 });
 
 app.get("/api/users", (req, res) => {
+  // console.log(req.headers)
+  // res.setHeader("X-MyName", "bisentejas"); // custom headers
+  // ALways add X- to custom headers [Good Practice]
   return res.json(users);
 });
 
 app.post("/api/users", (req, res) => {
   const body = req.body;
+  if (
+    !body ||
+    !body.first_name ||
+    !body.email ||
+    !body.gender ||
+    !body.job_title ||
+    !body.last_name
+  ) {
+    return res.status(400).json({ msg: "All Field Required" });
+  }
   users.push({ ...body, id: users.length + 1 });
   fs.writeFile("./MOCK_DATA.json", JSON.stringify(users), (err, data) => {
-    return res.json({ status: "Success", id: users.length });
+    return res.status(201).json({ status: "Success", id: users.length });
   });
   console.log("Create A New users");
 });
@@ -46,6 +59,7 @@ app
   .get((req, res) => {
     const id = Number(req.params.id);
     const user = users.find((user) => user.id === id);
+    if (!user) return res.status(404).json({ msg: "User Not Found" });
     return res.json(user);
   })
   .patch((req, res) => {
