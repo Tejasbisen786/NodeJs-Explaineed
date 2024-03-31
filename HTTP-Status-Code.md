@@ -17,7 +17,6 @@
 501-> Not Implemented
 502-> Bad Gateway
 
-
 <!-- Client Eror  -->
 
 400-> Bad Request

@@ -15,5 +15,7 @@ use db_name
 show coll_name
 db.users.find()
 db.users.create({
-    name:tejas
+name:tejas
 })
+
+mongodb://localhost:27017
