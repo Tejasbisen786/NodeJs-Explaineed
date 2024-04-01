@@ -37,3 +37,21 @@
 1711878734126 :  ::1 :GET : /api/users/66092e6216a088b2739f62b0 
 1711878738113 :  ::1 :GET : /api/users 
 1711878761576 :  ::1 :GET : /users 
+: ::1 : PATCH 
+: ::1 : GET 
+: ::1 : GET 
+: ::1 : GET 
+: ::1 : GET 
+: ::1 : GET 
+: ::1 : GET 
+: ::1 : GET 
+: ::1 : GET 
+: ::1 : PATCH 
+: ::1 : PATCH 
+: ::1 : GET 
+: ::1 : GET 
+: ::1 : PATCH 
+: ::1 : DELETE 
+: ::1 : GET 
+ 1711974051728: ::1 : GET 
+ 1711974077894: ::1 : GET 
